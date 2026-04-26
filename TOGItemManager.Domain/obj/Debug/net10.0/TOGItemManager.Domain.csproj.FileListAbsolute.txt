@@ -1,0 +1,12 @@
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\bin\Debug\net10.0\TOGItemManager.Domain.deps.json
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\bin\Debug\net10.0\TOGItemManager.Domain.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\bin\Debug\net10.0\TOGItemManager.Domain.pdb
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.csproj.AssemblyReference.cache
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.AssemblyInfoInputs.cache
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.AssemblyInfo.cs
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.csproj.CoreCompileInputs.cache
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\refint\TOGItemManager.Domain.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.pdb
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\ref\TOGItemManager.Domain.dll

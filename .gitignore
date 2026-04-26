@@ -1,0 +1,29 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Rider / Resharper
+.idea/
+
+# VSCode
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Secrets
+appsettings.Development.json
+appsetting.Local.json
+
+# Nuget
+*.nupkg
+packages/

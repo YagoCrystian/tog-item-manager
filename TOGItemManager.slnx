@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="TOGItemManager.API/TOGItemManager.API.csproj" />
+  <Project Path="TOGItemManager.Application/TOGItemManager.Application.csproj" />
+  <Project Path="TOGItemManager.Domain.Tests/TOGItemManager.Domain.Tests.csproj" />
+  <Project Path="TOGItemManager.Domain/TOGItemManager.Domain.csproj" />
+  <Project Path="TOGItemManager.Infra/TOGItemManager.Infra.csproj" />
+</Solution>
