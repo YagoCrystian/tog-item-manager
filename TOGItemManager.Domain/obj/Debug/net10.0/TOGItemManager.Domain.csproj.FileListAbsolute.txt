@@ -10,3 +10,4 @@ H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemMa
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\refint\TOGItemManager.Domain.dll
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.pdb
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\ref\TOGItemManager.Domain.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain\obj\Debug\net10.0\TOGItemManager.Domain.sourcelink.json
