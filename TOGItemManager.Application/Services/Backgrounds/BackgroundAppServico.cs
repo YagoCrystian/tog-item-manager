@@ -1,11 +1,10 @@
-using TOGItemManager.Application.DTOs.Background.Requests;
-using TOGItemManager.Application.DTOs.Background.Responses;
+using TOGItemManager.Application.DTOs.Backgrounds.Requests;
+using TOGItemManager.Application.DTOs.Backgrounds.Responses;
 using TOGItemManager.Application.DTOs.Comuns.Responses;
 using TOGItemManager.Application.Extensoes.Queryable;
 using TOGItemManager.Application.Services.Backgrounds.Interfaces;
 using TOGItemManager.Domain.Entidades.Backgrounds;
 using TOGItemManager.Domain.Entidades.Backgrounds.Interfaces;
-using TOGItemManager.Domain.Entidades.Usuarios;
 
 namespace TOGItemManager.Application.Services.Backgrounds
 {

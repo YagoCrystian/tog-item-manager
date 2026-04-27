@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using TOGItemManager.Application.DTOs.Background.Requests;
-using TOGItemManager.Application.DTOs.Background.Responses;
+using TOGItemManager.Application.DTOs.Backgrounds.Requests;
+using TOGItemManager.Application.DTOs.Backgrounds.Responses;
 using TOGItemManager.Application.DTOs.Comuns.Responses;
 using TOGItemManager.Application.Services.Backgrounds.Interfaces;
 

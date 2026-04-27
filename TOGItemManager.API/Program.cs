@@ -15,6 +15,8 @@ using TOGItemManager.Application.Services.Auth;
 using TOGItemManager.Application.Services.Auth.Interfaces;
 using TOGItemManager.Application.Services.Backgrounds;
 using TOGItemManager.Application.Services.Backgrounds.Interfaces;
+using TOGItemManager.Application.Services.BackgroundsBonus;
+using TOGItemManager.Application.Services.BackgroundsBonus.Interfaces;
 using TOGItemManager.Application.Services.Categorias;
 using TOGItemManager.Application.Services.Categorias.Interfaces;
 
@@ -38,6 +40,7 @@ using TOGItemManager.Application.Services.Usuarios.Interfaces;
 
 using TOGItemManager.Domain.Entidades.Andares.Interfaces;
 using TOGItemManager.Domain.Entidades.Backgrounds.Interfaces;
+using TOGItemManager.Domain.Entidades.BackgroundsBonus.Interfaces;
 using TOGItemManager.Domain.Entidades.Categorias.Interfaces;
 using TOGItemManager.Domain.Entidades.Conjuntos.Interfaces;
 using TOGItemManager.Domain.Entidades.Items.Interfaces;
@@ -156,6 +159,9 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddScoped<IBackgroundAppServico, BackgroundAppServico>();
 builder.Services.AddScoped<IBackgroundRepositorio, BackgroundRepositorio>();
+
+builder.Services.AddScoped<IBackgroundBonusAppServico, BackgroundBonusAppServico>();
+builder.Services.AddScoped<IBackgroundBonusRepositorio, BackgroundBonusRepositorio>();
 
 
 // =========================
