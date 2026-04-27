@@ -105,3 +105,4 @@ H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain.Tests\obj\Debug\net10.0\ref
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain.Tests\obj\Debug\net10.0\TOGItemManager.Domain.Tests.pdb
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain.Tests\obj\Debug\net10.0\TOGItemManager.Domain.Tests.genruntimeconfig.cache
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain.Tests\obj\Debug\net10.0\ref\TOGItemManager.Domain.Tests.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Domain.Tests\obj\Debug\net10.0\TOGItemManager.Domain.Tests.sourcelink.json

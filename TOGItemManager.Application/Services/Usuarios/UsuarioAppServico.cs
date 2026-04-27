@@ -87,6 +87,12 @@ namespace TOGItemManager.Application.Services.Usuarios
         
             if(!string.IsNullOrWhiteSpace(request.Senha))
                 usuario.SetSenha(PasswordHasher.Hash(request.Senha));
+            
+            if(request.PerfilId.HasValue)
+            {
+                Perfil perfil = perfilRepositorio.ObterPorId(request.PerfilId.Value);
+                usuario.SetPerfil(perfil);
+            }
         
             usuario.SetDataModificado(DateTime.UtcNow);
         

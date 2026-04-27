@@ -15,3 +15,4 @@ H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Infra\obj\Debug\net10.0\TOGItemMan
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Infra\obj\Debug\net10.0\refint\TOGItemManager.Infra.dll
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Infra\obj\Debug\net10.0\TOGItemManager.Infra.pdb
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Infra\obj\Debug\net10.0\ref\TOGItemManager.Infra.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.Infra\obj\Debug\net10.0\TOGItemManager.Infra.sourcelink.json

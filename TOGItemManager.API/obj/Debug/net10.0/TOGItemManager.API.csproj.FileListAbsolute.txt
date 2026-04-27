@@ -98,3 +98,4 @@ H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.API\obj\Debug\net10.0\TOGItemManag
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.API\obj\Debug\net10.0\TOGItemManager.API.genruntimeconfig.cache
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.API\obj\Debug\net10.0\ref\TOGItemManager.API.dll
 H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.API\bin\Debug\net10.0\SwaggerThemes.dll
+H:\PROJETOS\GESTAOITEM\BACKEND\TOGItemManager.API\obj\Debug\net10.0\TOGItemManager.API.sourcelink.json

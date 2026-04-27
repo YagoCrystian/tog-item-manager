@@ -6,6 +6,7 @@ namespace TOGItemManager.Application.DTOs.Usuarios.Requests
         public string? Apelido { get; set; }
         public string? Email { get; set; }
         public string? Senha { get; set; }
+        public int? PerfilId { get; set; }
 
     }
     
