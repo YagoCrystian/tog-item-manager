@@ -37,7 +37,8 @@ using TOGItemManager.Application.Services.PosicoesBonus;
 using TOGItemManager.Application.Services.PosicoesBonus.Interfaces;
 using TOGItemManager.Application.Services.Raridades;
 using TOGItemManager.Application.Services.Raridades.Interfaces;
-
+using TOGItemManager.Application.Services.Supertabelas;
+using TOGItemManager.Application.Services.Supertabelas.Interfaces;
 using TOGItemManager.Application.Services.Usuarios;
 using TOGItemManager.Application.Services.Usuarios.Interfaces;
 
@@ -52,6 +53,7 @@ using TOGItemManager.Domain.Entidades.Perfis.Interfaces;
 using TOGItemManager.Domain.Entidades.Posicoes.Interfaces;
 using TOGItemManager.Domain.Entidades.PosicoesBonus.Interfaces;
 using TOGItemManager.Domain.Entidades.Raridades.Interfaces;
+using TOGItemManager.Domain.Entidades.Supertabelas.Interfaces;
 using TOGItemManager.Domain.Entidades.Usuarios.Interfaces;
 
 using TOGItemManager.Infra.Mapping;
@@ -173,6 +175,9 @@ builder.Services.AddScoped<IPosicaoRepositorio, PosicaoRepositorio>();
 
 builder.Services.AddScoped<IPosicaoBonusAppServico, PosicaoBonusAppServico>();
 builder.Services.AddScoped<IPosicaoBonusRepositorio, PosicaoBonusRepositorio>();
+
+builder.Services.AddScoped<ISupertabelaAppServico, SupertabelaAppServico>();
+builder.Services.AddScoped<ISupertabelaRepositorio, SupertabelaRepositorio>();
 
 
 // =========================
