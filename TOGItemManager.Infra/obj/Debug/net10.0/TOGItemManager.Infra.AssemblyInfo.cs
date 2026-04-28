@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TOGItemManager.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55df22fd0cc16992fc1ce08eb2c1e888e4e6b9d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b93fe51cae910075ed6da1818cf3884c680f32e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TOGItemManager.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TOGItemManager.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
