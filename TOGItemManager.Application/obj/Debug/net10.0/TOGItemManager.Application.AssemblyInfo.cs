@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TOGItemManager.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12bff484b4f1c35c7857ecb20863c72dd4c185b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49bf160e2ca92672149321372dfffc8841d6220a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TOGItemManager.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TOGItemManager.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
