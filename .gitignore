@@ -1,29 +1,101 @@
+############################
 # Build
+############################
 bin/
 obj/
+out/
 
+############################
 # Visual Studio
+############################
 .vs/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
 
-# Logs
-*.log
-
-# Rider / Resharper
+############################
+# Rider / ReSharper
+############################
 .idea/
+_ReSharper*/
+*.DotSettings.user
 
-# VSCode
+############################
+# VS Code
+############################
 .vscode/
 
-# OS Files
+############################
+# Logs
+############################
+*.log
+
+############################
+# OS files
+############################
 .DS_Store
 Thumbs.db
+ehthumbs.db
 
-# Secrets
-appsettings.Development.json
-appsetting.Local.json
-
-# Nuget
+############################
+# NuGet
+############################
 *.nupkg
+*.snupkg
 packages/
+.nuget/
+
+############################
+# Build output
+############################
+TestResults/
+coverage/
+
+############################
+# ASP.NET Scaffolding
+############################
+ScaffoldingReadMe.txt
+
+############################
+# Entity Framework
+############################
+*.mdf
+*.ldf
+
+############################
+# Publish
+############################
+publish/
+*.publishsettings
+
+############################
+# Secrets / Local config
+############################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+############################
+# Node (caso tenha frontend)
+############################
+node_modules/
+dist/
+build/
+
+############################
+# Temporary files
+############################
+*.tmp
+*.temp
+*.cache
+
+############################
+# JetBrains Rider cache
+############################
+.idea/
+
+############################
+# Debug
+############################
+*.pdb

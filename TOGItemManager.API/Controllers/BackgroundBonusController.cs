@@ -61,7 +61,16 @@ namespace TOGItemManager.API.Controllers
         public ActionResult<BackgroundBonusResponse> ObterPorId(int id)
         {
             var backgroundBonus = backgroundBonusAppServico.ObterEValidar(id);
-            return Ok(backgroundBonus);
+        
+            var response = new BackgroundBonusResponse(
+                backgroundBonus.Id,
+                backgroundBonus.TipoBonus,
+                backgroundBonus.Referencia,
+                backgroundBonus.Valor,
+                backgroundBonus.EscolhaJogador
+            );
+        
+            return Ok(response);
         }
 
     }

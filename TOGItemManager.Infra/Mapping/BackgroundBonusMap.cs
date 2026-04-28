@@ -1,4 +1,3 @@
-using System.Security.Cryptography.Xml;
 using FluentNHibernate.Mapping;
 using TOGItemManager.Domain.Entidades.BackgroundsBonus;
 
@@ -19,6 +18,8 @@ namespace TOGItemManager.Infra.Mapping
             Map(b => b.EscolhaJogador).Column("EscolhaJogador").Not.Nullable();
 
             References(bb => bb.Background).Column("BackgroundId").Not.Nullable();
+
+
         }
     }
 }

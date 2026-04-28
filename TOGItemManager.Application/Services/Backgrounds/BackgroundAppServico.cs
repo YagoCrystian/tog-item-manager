@@ -1,5 +1,6 @@
 using TOGItemManager.Application.DTOs.Backgrounds.Requests;
 using TOGItemManager.Application.DTOs.Backgrounds.Responses;
+using TOGItemManager.Application.DTOs.BackgroundsBonus.Responses;
 using TOGItemManager.Application.DTOs.Comuns.Responses;
 using TOGItemManager.Application.Extensoes.Queryable;
 using TOGItemManager.Application.Services.Backgrounds.Interfaces;
@@ -82,7 +83,19 @@ namespace TOGItemManager.Application.Services.Backgrounds
 
             var backgrounds = query.Paginar(filtro).ToList();
 
-            var data = backgrounds.Select(b => new BackgroundResponse(b.Id, b.Nome, b.Descricao)).ToList();
+            var data = backgrounds.Select(b => new BackgroundResponse(
+                b.Id, 
+                b.Nome, 
+                b.Descricao,
+                b.Bonus.Select(bb => new BackgroundBonusResponse(
+                    bb.Id,
+                    bb.TipoBonus,
+                    bb.Referencia,
+                    bb.Valor,
+                    bb.EscolhaJogador
+                ))
+                .ToList()))
+                .ToList();
 
             return new PaginacaoResponse<BackgroundResponse>(
                 data,

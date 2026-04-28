@@ -1,3 +1,5 @@
+using TOGItemManager.Domain.Entidades.PosicoesBonus;
+
 namespace TOGItemManager.Domain.Entidades.Posicoes
 {
     public class Posicao
@@ -5,6 +7,7 @@ namespace TOGItemManager.Domain.Entidades.Posicoes
         public virtual int Id { get; protected set; }
         public virtual string Nome { get; protected set; }
         public virtual string Descricao { get; protected set; }
+        public virtual IList<PosicaoBonus> Bonus { get; protected set; }
 
         protected Posicao() { }
 
@@ -12,6 +15,15 @@ namespace TOGItemManager.Domain.Entidades.Posicoes
         {
             SetNome(nome);
             SetDescricao(Descricao);
+            Bonus = new List<PosicaoBonus>();
+        }
+
+        public virtual void AddBonus(PosicaoBonus bonus)
+        {
+            if (bonus == null)
+                throw new ArgumentNullException(nameof(bonus));
+
+            Bonus.Add(bonus);
         }
 
         public virtual void SetNome(string nome)

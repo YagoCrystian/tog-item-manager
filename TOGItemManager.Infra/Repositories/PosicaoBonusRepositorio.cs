@@ -1,25 +1,25 @@
 using NHibernate;
-using TOGItemManager.Domain.Entidades.Posicoes;
-using TOGItemManager.Domain.Entidades.Posicoes.Interfaces;
+using TOGItemManager.Domain.Entidades.PosicoesBonus;
+using TOGItemManager.Domain.Entidades.PosicoesBonus.Interfaces;
 
 namespace TOGItemManager.Infra.Repositories
 {
-    public class PosicaoRepositorio : IPosicaoRepositorio
+    public class PosicaoBonusRepositorio : IPosicaoBonusRepositorio
     {
         private readonly ISession session;
 
-        public PosicaoRepositorio(ISession session)
+        public PosicaoBonusRepositorio(ISession session)
         {
             this.session = session;
         }
 
-        public void Inserir(Posicao posicao)
+        public void Inserir(PosicaoBonus posicaoBonus)
         {
             var transaction = session.BeginTransaction();
 
             try
             {
-                session.Save(posicao);
+                session.Save(posicaoBonus);
                 transaction.Commit();
             }
             catch
@@ -29,13 +29,13 @@ namespace TOGItemManager.Infra.Repositories
             }
         }
 
-        public void Remover(Posicao posicao)
+        public void Remover(PosicaoBonus posicaoBonus)
         {
             var transaction = session.BeginTransaction();
 
             try
             {
-                session.Delete(posicao);
+                session.Delete(posicaoBonus);
                 transaction.Commit();
             }
             catch
@@ -45,13 +45,13 @@ namespace TOGItemManager.Infra.Repositories
             }
         }
 
-        public void Atualizar(Posicao posicao)
+        public void Atualizar(PosicaoBonus posicaoBonus)
         {
             var transaction = session.BeginTransaction();
 
             try
             {
-                session.Update(posicao);
+                session.Update(posicaoBonus);
                 transaction.Commit();
             }
             catch
@@ -61,14 +61,14 @@ namespace TOGItemManager.Infra.Repositories
             }
         }
 
-        public Posicao ObterPorId(int id)
+        public PosicaoBonus ObterPorId(int id)
         {
-            return session.Get<Posicao>(id);
+            return session.Get<PosicaoBonus>(id);
         }
 
-        public IQueryable<Posicao> Query()
+        public IQueryable<PosicaoBonus> Query()
         {
-            return session.Query<Posicao>();
+            return session.Query<PosicaoBonus>();
         }
     }
 }

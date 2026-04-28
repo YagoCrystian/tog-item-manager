@@ -1,44 +1,40 @@
-using TOGItemManager.Domain.Entidades.Backgrounds;
+using TOGItemManager.Domain.Entidades.Posicoes;
 using TOGItemManager.Domain.Enums;
 
-namespace TOGItemManager.Domain.Entidades.BackgroundsBonus
+namespace TOGItemManager.Domain.Entidades.PosicoesBonus
 {
-    public class BackgroundBonus
+    public class PosicaoBonus
     {
         public virtual int Id { get; protected set; }
-        public virtual Background Background { get; protected set; }
+        public virtual Posicao Posicao { get; protected set; }
         public virtual TipoBonusEnum TipoBonus { get; protected set; }
         public virtual int Referencia { get; protected set; }
         public virtual int Valor { get; protected set; }
-        public virtual bool EscolhaJogador { get; protected set; }
-        
-        protected BackgroundBonus(){}
+        public virtual bool PorNivel { get; protected set; }
 
-        public BackgroundBonus(Background background, TipoBonusEnum tipoBonus, int referencia, int valor, bool escolha)
+        protected PosicaoBonus() { }
+
+        public PosicaoBonus(Posicao posicao, TipoBonusEnum tipoBonus, int referencia, int valor, bool porNivel)
         {
-            SetBackground(background);
+            SetPosicao(posicao);
             SetTipoBonus(tipoBonus);
             SetReferencia(referencia);
             SetValor(valor);
-            SetEscolha(escolha);
+            SetPorNivel(porNivel);
         }
-        
-        public virtual void SetBackground(Background background)
+
+        public virtual void SetPosicao(Posicao posicao)
         {
-            if(background == null)
-                throw new ArgumentNullException(nameof(background), "O background não pode ser nulo.");
-
-            Background = background;
+            if (posicao == null)
+                throw new ArgumentNullException(nameof(posicao));
+            Posicao = posicao;
         }
-
         public virtual void SetTipoBonus(TipoBonusEnum tipoBonus)
         {
             if(!Enum.IsDefined(typeof(TipoBonusEnum), tipoBonus))
                 throw new ArgumentException("Tipo de bonus inválido.");
-            
             TipoBonus = tipoBonus;
         }
-
         public virtual void SetReferencia(int referencia)
         {
             if(referencia < 0)
@@ -46,7 +42,6 @@ namespace TOGItemManager.Domain.Entidades.BackgroundsBonus
 
             Referencia = referencia;
         }
-
         public virtual void SetValor(int valor)
         {
             if(valor < 0)
@@ -54,10 +49,10 @@ namespace TOGItemManager.Domain.Entidades.BackgroundsBonus
 
             Valor = valor;
         }
-
-        public virtual void SetEscolha(bool escolha)
+        public virtual void SetPorNivel(bool porNivel)
         {
-            EscolhaJogador = escolha;
+            PorNivel = porNivel;
         }
+
     }
 }

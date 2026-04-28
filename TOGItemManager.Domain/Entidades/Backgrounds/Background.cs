@@ -1,3 +1,5 @@
+using TOGItemManager.Domain.Entidades.BackgroundsBonus;
+
 namespace TOGItemManager.Domain.Entidades.Backgrounds
 {
     public class Background
@@ -6,14 +8,24 @@ namespace TOGItemManager.Domain.Entidades.Backgrounds
         public virtual string Nome { get; protected set; }
         public virtual string Descricao { get; protected set; }
 
-        protected Background() {}
+        public virtual IList<BackgroundBonus> Bonus { get; protected set; } = new List<BackgroundBonus>();
+
+        protected Background(){}
 
         public Background(string nome, string descricao)
         {
             SetNome(nome);
             SetDescricao(descricao);
+            Bonus = new List<BackgroundBonus>();
         }
 
+        public virtual void AddBonus(BackgroundBonus bonus)
+        {
+            if (bonus == null)
+                throw new ArgumentNullException(nameof(bonus));
+
+            Bonus.Add(bonus);
+        }
         public virtual void SetNome(string nome)
         {
             if(string.IsNullOrEmpty(nome))

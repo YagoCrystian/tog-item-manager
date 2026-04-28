@@ -14,6 +14,11 @@ namespace TOGItemManager.Infra.Mapping
 
             Map(b => b.Nome).Column("Nome").Length(50).Not.Nullable();
             Map(b => b.Descricao).Column("Descricao").Not.Nullable();
+
+            HasMany(b => b.Bonus)
+                .KeyColumn("BackgroundId")
+                .Inverse()
+                .Cascade.All();
         }
     }
 }

@@ -31,7 +31,10 @@ using TOGItemManager.Application.Services.NPCs.Interfaces;
 
 using TOGItemManager.Application.Services.Perfis;
 using TOGItemManager.Application.Services.Perfis.Interfaces;
-
+using TOGItemManager.Application.Services.Posicoes;
+using TOGItemManager.Application.Services.Posicoes.Interfaces;
+using TOGItemManager.Application.Services.PosicoesBonus;
+using TOGItemManager.Application.Services.PosicoesBonus.Interfaces;
 using TOGItemManager.Application.Services.Raridades;
 using TOGItemManager.Application.Services.Raridades.Interfaces;
 
@@ -46,6 +49,8 @@ using TOGItemManager.Domain.Entidades.Conjuntos.Interfaces;
 using TOGItemManager.Domain.Entidades.Items.Interfaces;
 using TOGItemManager.Domain.Entidades.NPCs.Interfaces;
 using TOGItemManager.Domain.Entidades.Perfis.Interfaces;
+using TOGItemManager.Domain.Entidades.Posicoes.Interfaces;
+using TOGItemManager.Domain.Entidades.PosicoesBonus.Interfaces;
 using TOGItemManager.Domain.Entidades.Raridades.Interfaces;
 using TOGItemManager.Domain.Entidades.Usuarios.Interfaces;
 
@@ -131,6 +136,8 @@ builder.Services.AddCors(options =>
 // SERVICES
 // =========================
 
+builder.Services.AddScoped<IAuthService, AuthService>();
+
 builder.Services.AddScoped<IRaridadeAppServico, RaridadeAppServico>();
 builder.Services.AddScoped<IRaridadeRepositorio, RaridadeRepositorio>();
 
@@ -155,13 +162,17 @@ builder.Services.AddScoped<IPerfilRepositorio, PerfilRepositorio>();
 builder.Services.AddScoped<IUsuarioAppServico, UsuarioAppServico>();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
-builder.Services.AddScoped<IAuthService, AuthService>();
-
 builder.Services.AddScoped<IBackgroundAppServico, BackgroundAppServico>();
 builder.Services.AddScoped<IBackgroundRepositorio, BackgroundRepositorio>();
 
 builder.Services.AddScoped<IBackgroundBonusAppServico, BackgroundBonusAppServico>();
 builder.Services.AddScoped<IBackgroundBonusRepositorio, BackgroundBonusRepositorio>();
+
+builder.Services.AddScoped<IPosicaoAppServico, PosicaoAppServico>();
+builder.Services.AddScoped<IPosicaoRepositorio, PosicaoRepositorio>();
+
+builder.Services.AddScoped<IPosicaoBonusAppServico, PosicaoBonusAppServico>();
+builder.Services.AddScoped<IPosicaoBonusRepositorio, PosicaoBonusRepositorio>();
 
 
 // =========================
