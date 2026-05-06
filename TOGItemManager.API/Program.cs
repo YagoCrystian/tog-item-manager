@@ -31,6 +31,8 @@ using TOGItemManager.Application.Services.NPCs.Interfaces;
 
 using TOGItemManager.Application.Services.Perfis;
 using TOGItemManager.Application.Services.Perfis.Interfaces;
+using TOGItemManager.Application.Services.Poderes;
+using TOGItemManager.Application.Services.Poderes.Interfaces;
 using TOGItemManager.Application.Services.Posicoes;
 using TOGItemManager.Application.Services.Posicoes.Interfaces;
 using TOGItemManager.Application.Services.PosicoesBonus;
@@ -50,6 +52,7 @@ using TOGItemManager.Domain.Entidades.Conjuntos.Interfaces;
 using TOGItemManager.Domain.Entidades.Items.Interfaces;
 using TOGItemManager.Domain.Entidades.NPCs.Interfaces;
 using TOGItemManager.Domain.Entidades.Perfis.Interfaces;
+using TOGItemManager.Domain.Entidades.Poderes.Interfaces;
 using TOGItemManager.Domain.Entidades.Posicoes.Interfaces;
 using TOGItemManager.Domain.Entidades.PosicoesBonus.Interfaces;
 using TOGItemManager.Domain.Entidades.Raridades.Interfaces;
@@ -178,6 +181,9 @@ builder.Services.AddScoped<IPosicaoBonusRepositorio, PosicaoBonusRepositorio>();
 
 builder.Services.AddScoped<ISupertabelaAppServico, SupertabelaAppServico>();
 builder.Services.AddScoped<ISupertabelaRepositorio, SupertabelaRepositorio>();
+
+builder.Services.AddScoped<IPoderAppServico, PoderAppServico>();
+builder.Services.AddScoped<IPoderRepositorio, PoderRepositorio>();
 
 
 // =========================
